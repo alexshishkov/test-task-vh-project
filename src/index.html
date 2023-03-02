@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <title>test-task</title>
+</head>
+
+<body>
+  <section class='wrapper'>
+    <header>
+      <div class='burger'>
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      <nav class='menu'>
+        <div class='close'></div>
+        <div class='menu__items'>
+          <div class='menu__item'>
+            <span class='item'>Menu 1</span>
+            <div class='go'>Go</div>
+          </div>
+          <div class='menu__item'>
+            <span class='item'>Menu 2</span>
+            <div class='go'>Go</div>
+          </div>
+          <div class='menu__item'>
+            <span class='item'>Menu 3</span>
+            <div class='go'>Go</div>
+          </div>
+          <div class='menu__item'>
+            <span class='item'>Menu 4</span>
+            <div class='go'>Go</div>
+          </div>
+        </div>
+        <div class='menu__phone'>8 800 000 00 00</div>
+      </nav>
+      <div class='phone'>8 800 000 00 00</div>
+    </header>
+    <main>
+      <div class='content'>
+        <h1>
+          <p>Bibendum neque</p>
+          egestas congue
+        </h1>
+        <div class='content__text'>lacus sed viverra tellus in hac habitasse platea dictumst vestibulum
+          rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat
+        </div>
+        <button><span>Click me</span></button>
+      </div>
+      <div class='slider'>
+        <div class='present__wrapper'>
+          <div class='swiper-container'>
+            <div class='swiper-wrapper'>
+              <div class='present one swiper-slide'></div>
+              <div class='present two swiper-slide'></div>
+              <div class='present three swiper-slide'></div>
+            </div>
+          </div>
+        </div>
+        <div class='slider__control'>
+          <div class='slider__control-arrows slider__control-left'></div>
+          <div class='slider__control-arrows slider__control-right'></div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <script src="main.ts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+      navigation: {
+        nextEl: '.slider__control-left',
+        prevEl: '.slider__control-right',
+      },
+      allowTouchMove:false,
+    })   
+  </script>
+</body>
+
+</html>
